@@ -17,20 +17,32 @@ public class aula6 {
         for(int i = 0; i < num.length; i++){
             System.out.printf("sua coleção de números é: %d  --", num[i]);
         }  
+
         */
 
-        char[] gabarito = {'a', 'b', 'c', 'a','a'};
+        String[] gabarito = {"a", "b", "c", "a","a"};
 
         Scanner scan = new Scanner(System.in);
-        String[] respotas = new String[5];
+        int nota = 0;
+        String[] respostaUsuario = new String[5];
 
         for(int i = 0; i < gabarito.length; i++){
 
-        System.out.println("digite a letra de sua respota");
-        String respostaUsuario = scan.nextLine();
-        respotas[i] = respostaUsuario;
-    
-        }
+            System.out.println("digite a letra de sua respota");
 
-    } 
-}
+            respostaUsuario[i] = scan.nextLine();
+        
+            
+            if(respostaUsuario[i] == gabarito[i]) {
+                System.out.printf("parabéns, você acertou a questão %d", gabarito[i]);
+                nota++;
+            }else{
+                System.out.printf("você errou a questão %", gabarito[i]);
+            }
+
+        }
+                System.out.printf("a sua nota no teste é %d", nota);
+
+    }
+
+} 
