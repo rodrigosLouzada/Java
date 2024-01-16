@@ -4,14 +4,20 @@ public class aula7 {
     public static void main(String[] args){
         int[] num = {10,20,70,33,50};
         int[] numeros = new int[5];
-        /* 
+        
         for(int i = 0; i < num.length; i++){
             System.out.printf("%d", num[i]);
         } 
         Arrays.fill(numeros, 45);
-        Arrays.sort(num); */
+        Arrays.sort(num); 
         System.arraycopy(num, 0, numeros, 0, 5);
         boolean teste = Arrays.equals(num, numeros);
+        
+        int p ;
+        Arrays.sort(num);
+        p = Arrays.binarySearch(num, 10);
+        System.out.printf("%d", p );
+
 
         System.out.printf("arrays são iguais? %s", teste ? "sim" : "não" );
 
