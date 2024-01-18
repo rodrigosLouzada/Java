@@ -15,7 +15,7 @@ public class aula8 {
 
         for(int[]n : num){
             for(int v : n){
-                System.out.printf("%3d /", v)
+                System.out.printf("%3d /", v);
 
             }
 
