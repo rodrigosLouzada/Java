@@ -1,6 +1,7 @@
 public class Veiculo {
-    private String nome;
-    private int tipo;
+    private String nome; // protected String nome;
+    private int tipo;   // protected int tipo;
+    protected
 
     public Veiculo(String nome, int tipo){
         this.nome = nome;
