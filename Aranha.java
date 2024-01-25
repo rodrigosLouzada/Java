@@ -12,7 +12,7 @@ public class Aranha extends Animal2 {
         if(this.getVivo()){
 
             if(this.getForca() <= a.getForca()){
-                this.setForca += a.getMassa();
+                this.setForca(this.getForca() + a.getMassa());
             }
             if((this.getForca() + this.veneno) > a.getForca()){
                 this.setForca(this.getForca() + a.getMassa());
