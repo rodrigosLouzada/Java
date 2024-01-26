@@ -3,6 +3,7 @@ public class Aula24 {
 
         int [] num = new int[5];
         int [] num1 = {10,20,30,40,50};
+        
 
         for(int i = 0; i < num1.length; i++){
             System.out.printf("%d-", num1[i]);
