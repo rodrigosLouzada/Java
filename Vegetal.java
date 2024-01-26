@@ -1,4 +1,4 @@
-public class Vegetal{
+public class Vegetal extends Animal2{
     private Boolean vivo;
     private int massa;
 

@@ -5,7 +5,8 @@ public class Aula18 {
 
         // n1.info();
 
-        Formiga a1 = new Formiga();
+        Formiga a1 = new Formiga(10,10,10);
+        Sapo s1 = new Sapo(10,10,10);
 
 
     }
