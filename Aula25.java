@@ -14,16 +14,16 @@ public class Aula25 {
 
 
          for(int i = 0; i< carros.length ; i++){
-            carros[i] = new Carro(nomesCarros[i]);
+            carros2[i] = new Carro(nomesCarros[i]);
         }
 
 
         for(int i = 0; i < carros.length ; i++){
-            carros[i].info();
+            carros2[i].info();
         }
 
 
-        for(Carro c : carros){
+        for(Carro c : carros2){
             c.info();
         }
 
