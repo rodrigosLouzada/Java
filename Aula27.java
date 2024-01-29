@@ -3,6 +3,8 @@ public class Aula27 {
         String nome = "Rodrigo";
         int[] numeros = {10,33,44,50,90};
 
+        parImpar(numeros);
+
         for(char c : nome.toCharArray()){
             System.out.printf("%c", c);
         }
