@@ -41,6 +41,8 @@ public class Aula29 {
         
 
         }while(respSN.equals("sim"));
+
+        return respostasUsuario;
         
     }
     
