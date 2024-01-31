@@ -11,12 +11,28 @@ public class JogodaVelha {
         Scanner scan = new Scanner(System.in);
 
         while(game){
+            desenhaJogo(velha);
+            vitoria = verificaVitoria(velha);
+
+            if(!vitoria.equals("")){
+                System.out.printf("jogador $s venceu%n", vitoria);
+                break;
+            }
+            try{
+
+
+            }catch(Exception e){
+                System.out.printf("erro");
+            }
 
         }
+
+        System.out.printf("fim de jogo");
     
     }
 
     public static void desenhaJogo(Campo[][] velha){
+        limparTela();
 
         System.out.println("   0   1   2");  // fazer um for pra preencher? 
         System.out.printf("0   %c |  %c |  %c %n",velha[0][0].getSimbolo(), velha[0][1].getSimbolo(), velha[0][2]);
@@ -27,5 +43,15 @@ public class JogodaVelha {
 
 
 
+    }
+
+    public static void limparTela(){
+        for(int cont =  0; cont < 200; cont++){
+            System.out.println("");
+        }
+    }
+
+    public static String verificaVitoria(Campo[][] velha){
+        return "";
     }
 }
