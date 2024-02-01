@@ -10,6 +10,8 @@ public class JogodaVelha {
         String vitoria = "";
         Scanner scan = new Scanner(System.in);
 
+        iniciarJogo(velha);
+
         while(game){
             desenhaJogo(velha);
             vitoria = verificaVitoria(velha);
@@ -35,8 +37,9 @@ public class JogodaVelha {
         }
 
         System.out.printf("fim de jogo");
-    
     }
+
+
 
     public static void desenhaJogo(Campo[][] velha){
         limparTela();
@@ -82,6 +85,17 @@ public class JogodaVelha {
         }
 
     }
+
+    public static void iniciarJogo(Campo[][] velha){
+        for(int l = 0; l< 3 ; l++){
+            for(int c = 0; c< 3; c++){
+                velha[l][c] = new Campo();
+            }
+        }
+
+    }
+
+
 
     public static String verificaVitoria(Campo[][] velha){
         return "";
