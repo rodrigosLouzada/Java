@@ -19,6 +19,13 @@ public class JogodaVelha {
                 break;
             }
             try{
+                if(verificaJogada(velha, jogar(scan, simboloAtual), simboloAtual)){
+                    if(simboloAtual == 'X'){
+                        simboloAtual ='O';
+                    }else{
+                        simboloAtual = 'X';
+                    }
+                }
 
 
             }catch(Exception e){
@@ -49,6 +56,31 @@ public class JogodaVelha {
         for(int cont =  0; cont < 200; cont++){
             System.out.println("");
         }
+    }
+
+    public static int[] jogar(Scanner scan, char sa){
+        int[] p = new int[2];
+        System.out.printf("%s  c%%n", " quem joga:", sa);
+        System.out.printf("informe a linha:");
+        p[0] = scan.nextInt();
+        System.out.printf("informe a coluna:");
+        p[1] = scan.nextInt();
+        return p;
+
+    }
+
+
+
+    public static Boolean verificaJogada(Campo[][] velha, int p[], char simbolo){
+
+        if(velha[p[0]][p[1]].getSimbolo() == ' '){
+            velha[p[0]][p[1]].setSimbolo(simbolo);
+            return true;
+            
+        }else{
+            return false;
+        }
+
     }
 
     public static String verificaVitoria(Campo[][] velha){
