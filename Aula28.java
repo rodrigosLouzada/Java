@@ -39,4 +39,5 @@ public class Aula28 {
                 resultado[1]++;
             }
         }
+    }
 }
