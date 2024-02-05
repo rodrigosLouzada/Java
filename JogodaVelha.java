@@ -5,7 +5,7 @@ public class JogodaVelha {
 
         Campo[][] velha = new Campo[3][3];
 
-        char simboloAtual = 'x';
+        char simboloAtual = 'X';
         Boolean game = true;
         String vitoria = "";
         Scanner scan = new Scanner(System.in);
