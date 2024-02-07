@@ -9,6 +9,17 @@ public class Aula39 {
 
         String t = "java";    //String texto1 = new String("Java");
 
+
+
+
+        String str1 = "Olá, mundo!";
+        String str2 = "";
+
+        // Copia os caracteres de "Olá, mundo!" para "str2"
+        str1.getChars(0, 11, str2.toCharArray(), 0);
+
+        System.out.println(str2); // Imprime "Olá, mundo!""
+
         /* 
         	char[] texto;
                 
@@ -27,7 +38,7 @@ public class Aula39 {
 
          texto1.getChars(0, 3, teste, 0);
 
-        System.out.println("o novo texto é: " + teste);
+        System.out.println("o novo texto é: " + new String(teste));
 
         
 
