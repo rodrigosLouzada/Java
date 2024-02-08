@@ -17,6 +17,7 @@ public class Aula40 {
          
         System.out.println(s1.compareTo(s3));
         int pos = s2.compareTo(s1);
+        System.out.println(pos);
 
         if(pos == 0){
             
